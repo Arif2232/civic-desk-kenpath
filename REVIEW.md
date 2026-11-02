@@ -24,4 +24,4 @@ This is an AI-assisted draft. Run it yourself, make changes you agree with, and 
 - **How would we measure impact?** In a permitted pilot, compare median time to assignment and verified closure against a baseline; also audit returned cases and unsupported AI statements. The demo makes no measured impact claim.
 - **What would change for real government use?** Validate the actual service workflow and Hindi copy with officers, add accessible user research, real identity and role controls, durable shared sessions, proper permissions, privacy review, secure evidence handling, operational monitoring and an independently managed database.
 
-Before submission, decide how to provide a private demo login and a live HTTPS deployment; verify the reviewer can access the repository and application. Do not put secrets in the repository. The code, container and demo are local until explicitly published.
+Before submission, verify the reviewer can access the repository and live HTTPS demo and decide how to share the demo login privately. Do not put secrets in the repository.

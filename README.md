@@ -6,6 +6,8 @@ A bilingual, fictional officer workspace for uncollected-waste complaints. An of
 
 The draft was prepared with AI coding assistance. The candidate should review, test and understand it before any submission.
 
+Live demo: https://civic-desk-kenpath.onrender.com/ (reviewer credentials are available privately from the project owner). The free service can sleep when idle and its fictional data resets after a restart.
+
 ![Civic Desk workspace with fictional complaints](workspace-preview.png)
 
 ## The problem and the real-world basis
@@ -60,4 +62,4 @@ docker build -t civic-desk .
 docker run --rm -p 127.0.0.1:3001:3001 --env-file .env -v civic-desk-data:/data civic-desk
 ```
 
-For a public reviewer demo, deploy the container behind HTTPS, set the credentials and API key as host-managed secrets, mount persistent storage at `/data`, and share a unique demo login privately. Do not commit secrets or use the local-only default password. A host's ephemeral filesystem will reset the SQLite data on restart unless persistent storage is configured. Hosted deployment and evaluator access have not been set up by this repository.
+For a public reviewer demo, deploy behind HTTPS, set the credentials and API key as host-managed secrets, and share a unique demo login privately. Do not commit secrets or use the local-only default password. A host's ephemeral filesystem will reset the SQLite data on restart unless persistent storage is configured. The linked Render free demo intentionally uses ephemeral storage.
